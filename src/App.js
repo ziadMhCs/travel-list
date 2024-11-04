@@ -21,16 +21,16 @@ function Logo() {
 function Form() {
   function handelAdding(e){
     e.preventDefault();
-const  {...target.input.value...c} = e;
-    console.log(target.input.value)    ;
   }
   return (
     <form className="add-form" onSubmit={handelAdding}>
       <h3> what do you need for your 😍 trip ? </h3>
       <select>
-        <option value={1}> 1</option>
-        <option value={2}> 2</option>
-        <option value={3}> 3</option>
+
+      {Array.from(
+        {length:20}, (v,i)=>  <option value={i+1} key={i+1}> {i+1}</option>
+      )}
+
       </select>
       <input type="text" placeholder="item.."/>
       <button >add</button>
