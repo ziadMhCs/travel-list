@@ -17,10 +17,10 @@ body {
   color: #5a3e2b;
   font-family: "Quicksand";
   font-weight: 500;
+  /* width: 100%; */
 }
 
 .app {
-  width: 100%;
   height: 100vh;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
